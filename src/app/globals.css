@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 95%; /* Light Grey (#F0F4F7) */
+    --foreground: 210 15% 20%; /* Dark Grey for readability */
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    --primary: 205 68% 63%; /* Muted Blue (#5DADE2) */
+    --primary-foreground: 0 0% 100%; /* White for text on primary */
+
+    --secondary: 210 33% 90%; /* Slightly darker than background */
+    --secondary-foreground: 210 15% 20%;
+
+    --muted: 210 33% 90%;
+    --muted-foreground: 210 25% 50%;
+
+    --accent: 257 65% 74%; /* Lavender (#A391E6) */
+    --accent-foreground: 0 0% 100%; /* White for text on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 205 68% 63%; /* Primary color for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart colors - updated to fit the theme */
+    --chart-1: 205 68% 63%; /* Primary */
+    --chart-2: 257 65% 74%; /* Accent */
+    --chart-3: 205 50% 50%; /* Darker Primary */
+    --chart-4: 257 50% 60%; /* Darker Accent */
+    --chart-5: 210 30% 70%; /* Muted tone */
+
+    /* Sidebar colors to match theme */
+    --sidebar-background: 210 33% 98%;
+    --sidebar-foreground: 210 15% 20%;
+    --sidebar-primary: 205 68% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 33% 92%;
+    --sidebar-accent-foreground: 205 68% 63%;
+    --sidebar-border: 210 20% 88%;
+    --sidebar-ring: 205 68% 63%;
+  }
+
+  .dark {
+    --background: 210 15% 10%; /* Dark Blue/Grey */
+    --foreground: 210 20% 90%; /* Light Grey for readability */
+
+    --card: 210 15% 13%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 210 15% 13%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 205 68% 63%; /* Muted Blue (#5DADE2) - can stay same or adjust for dark */
+    --primary-foreground: 210 15% 10%; /* Dark color for text on primary in dark mode */
+
+    --secondary: 210 15% 18%; /* Slightly lighter than dark background */
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 210 15% 18%;
+    --muted-foreground: 210 25% 70%;
+
+    --accent: 257 65% 74%; /* Lavender (#A391E6) - can stay same or adjust */
+    --accent-foreground: 210 15% 10%; /* Dark color for text on accent in dark mode */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 205 68% 63%;
+
+    /* Chart colors - updated for dark theme */
+    --chart-1: 205 60% 55%;
+    --chart-2: 257 60% 65%;
+    --chart-3: 205 40% 40%;
+    --chart-4: 257 40% 50%;
+    --chart-5: 210 30% 60%;
+    
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 210 15% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 205 68% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 15%;
+    --sidebar-accent-foreground: 205 68% 63%;
+    --sidebar-border: 210 15% 20%;
+    --sidebar-ring: 205 68% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* font-family removed to rely on Geist from layout.tsx */
+  }
+}
+
+/* Parallax helper class */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
