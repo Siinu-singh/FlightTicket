@@ -1,16 +1,15 @@
 
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { KayakStyleHero } from "@/components/pages/home/KayakStyleHero"; 
+import { ValuePropsSection } from "@/components/pages/home/ValuePropsSection"; // Import the new section
+import { ImageReelSection } from "@/components/pages/home/ImageReelSection"; 
+import { SectionTitle } from "@/components/shared/SectionTitle";
 import { DestinationCard } from "@/components/shared/DestinationCard";
 import { FlightCard } from "@/components/shared/FlightCard";
-import { SectionTitle } from "@/components/shared/SectionTitle";
 import { FaqSection } from "@/components/pages/home/FaqSection";
-import { ContactUsForm } from "@/components/pages/home/ContactUsForm"; 
-import { HeroSection } from "@/components/shared/HeroSection";
+import { StatsAndImageSection } from "@/components/pages/home/StatsAndImageSection";
 import destinationsData from "@/data/destinations.json";
 import flightsData from "@/data/flights.json";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"; 
 
 export const metadata = {
   title: 'Home - Discover Amazing Flights & Destinations',
@@ -18,10 +17,12 @@ export const metadata = {
 };
 
 async function getFeaturedDestinations() {
+  // Simulating data fetching
   return destinationsData.slice(0, 4);
 }
 
 async function getFeaturedFlights() {
+  // Simulating data fetching
   return flightsData.slice(0, 4);
 }
 
@@ -31,22 +32,13 @@ export default async function HomePage() {
 
   return (
     <>
-      <HeroSection
-        className="mt-20" 
-        superTitle="Your Journey Awaits"
-        title="Book Your Dream Flight Today"
-        paragraph="Discover amazing destinations and book your flights at the best prices. Adventure is just a click away."
-        imageUrl="https://img.freepik.com/premium-photo/big-white-airplane-is-flying-rocks-sunrise_159067-623.jpg?uid=R202168573&ga=GA1.1.1575231207.1748452014&semt=ais_hybrid&w=740"
-        imageAlt="Airplane flying over mountains at sunrise"
-        imageHint="airplane sunrise mountains"
-        heightClassName="h-screen"
-        showButton={true}
-        buttonText="Book Flight"
-        buttonLink="/flights"
-        contentAlignment="justify-center text-center"
-        textMaxWidth="max-w-3xl"
-        overlayOpacity="bg-black/40 dark:bg-black/60"
-      />
+      <div className="mt-16"> {/* Ensures KayakStyleHero is below fixed navbar (h-16) */}
+        <KayakStyleHero />
+      </div>
+
+      <ValuePropsSection /> {/* Add the new section here */}
+
+      <ImageReelSection /> 
 
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +69,7 @@ export default async function HomePage() {
       </section>
 
       <FaqSection />
-      <ContactUsForm />
+      <StatsAndImageSection />
     </>
   );
 }

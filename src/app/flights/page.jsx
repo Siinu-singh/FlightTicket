@@ -19,9 +19,10 @@ export default async function FlightsPage() {
   return (
     <>
       <HeroSection
+        className="mt-20" // Added to place hero below navbar
         title="Find Your Perfect Flight"
         paragraph="Explore our wide selection of flights to destinations around the globe. Your next adventure is just a click away."
-        imageUrl="https://placehold.co/1920x1080.png" 
+        imageUrl="https://images.unsplash.com/photo-1549836032-eb40a0222043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhaXJwbGFuZSUyMHNreXxlbnwwfHx8fDE3NDg1OTY5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
         imageAlt="Airplane wing view over clouds"
         imageHint="airplane sky"
         heightClassName="h-[50vh]"
@@ -32,7 +33,7 @@ export default async function FlightsPage() {
         textMaxWidth="max-w-3xl"
         overlayOpacity="bg-black/40 dark:bg-black/60"
       />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div id="search-form" className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"> {/* Added id for button link */}
         <SectionTitle
           title="Available Flights"
           subtitle="Browse our current flight offerings. Deals updated regularly!"

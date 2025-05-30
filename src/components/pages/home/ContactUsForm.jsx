@@ -19,7 +19,9 @@ const CricketBatIcon = () => (
   </svg>
 );
 
-
+// This component is no longer used on the homepage directly, 
+// but can be kept for other potential uses or deleted if not needed elsewhere.
+// It can be linked from the new "Contact Us Now" button in StatsAndImageSection.jsx
 export function ContactUsForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -47,32 +49,19 @@ export function ContactUsForm() {
 
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900">
+    <section id="contact-us-form-actual" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          {/* Left Column: Image */}
-          <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-              <Image
-                src="https://placehold.co/400x400.png" 
-                alt="Cricketer in action"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full shadow-2xl"
-                data-ai-hint="cricket player action"
-              />
-            </div>
-          </div>
-
-          {/* Right Column: Form */}
-          <div className="space-y-8">
-            <div className="text-left">
+        <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground dark:text-white">
                 <CricketBatIcon />
                 <span className="text-primary dark:text-primary">Get in</span> Touch with Us
               </h2>
+              <p className="mt-3 text-muted-foreground">
+                Have questions or need assistance? Fill out the form below, and we'll get back to you shortly.
+              </p>
             </div>
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8 bg-card p-6 sm:p-8 rounded-lg shadow-xl">
               <div className="relative">
                 <Input
                   id="name"
@@ -122,7 +111,6 @@ export function ContactUsForm() {
             </form>
           </div>
         </div>
-      </div>
     </section>
   );
 }

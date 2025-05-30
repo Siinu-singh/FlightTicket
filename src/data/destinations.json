@@ -6,7 +6,7 @@
     "country": "France",
     "description": "The enchanting capital of France, known for its art, fashion, and iconic landmarks.",
     "longDescription": "Paris, often called the 'City of Light,' is a global center for art, fashion, gastronomy, and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond iconic landmarks like the Eiffel Tower and the Louvre, Paris is a city of charming neighborhoods, world-class museums, and vibrant café culture.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://images.unsplash.com/photo-1492136344046-866c85e0bf04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXJpcyUyMGxhbmRtYXJrJTIwZWlmZmVsJTIwdG93ZXJ8ZW58MHx8fHwxNzQ4NTkzMTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "dataAiHint": "paris landmark eiffel tower",
     "attractions": [
       { "name": "Eiffel Tower", "icon": "Tower" },
@@ -25,7 +25,7 @@
     "country": "Japan",
     "description": "A dazzling metropolis where traditional culture meets futuristic innovation.",
     "longDescription": "Tokyo, Japan’s bustling capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://images.unsplash.com/photo-1493514789931-586cb221d7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b2t5byUyMHNreWxpbmUlMjBuZW9ufGVufDB8fHx8MTc0ODU5MzE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
     "dataAiHint": "tokyo skyline neon",
     "attractions": [
       { "name": "Shibuya Crossing", "icon": "Users" },
@@ -44,7 +44,7 @@
     "country": "Italy",
     "description": "The Eternal City, offering a stunning blend of ancient history and vibrant street life.",
     "longDescription": "Rome, Italy’s capital, is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display. Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. Vatican City, headquarters of the Roman Catholic Church, has St. Peter’s Basilica and the Vatican Museums, which house masterpieces such as Michelangelo’s Sistine Chapel frescoes.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://images.unsplash.com/photo-1650981918863-a8c06ef640f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb21lJTIwcnVpbnMlMjBjb2xvc3NldW18ZW58MHx8fHwxNzQ4NTkzMTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
     "dataAiHint": "rome ruins colosseum",
     "attractions": [
       { "name": "Colosseum", "icon": "Landmark" },
@@ -62,7 +62,7 @@
     "country": "USA",
     "description": "The city that never sleeps, a melting pot of cultures and iconic sights.",
     "longDescription": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://images.unsplash.com/photo-1527267207156-3372670819dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuZXclMjB5b3JrJTIwY2l0eXNjYXBlfGVufDB8fHx8MTc0ODU5MzE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
     "dataAiHint": "new york cityscape",
     "attractions": [
       { "name": "Statue of Liberty", "icon": "Flame" },

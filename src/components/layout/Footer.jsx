@@ -71,8 +71,6 @@ export function Footer() {
         { label: "Destinations", href: "/destinations" },
         { label: "Blogs", href: "/blogs" },
         { label: "Flights", href: "/flights" },
-        // { label: "About Us", href: "/about" }, // Example, if you have an about page
-        // { label: "Contact", href: "/contact" } // Example, if you have a contact page
       ]
     },
     {
@@ -80,6 +78,7 @@ export function Footer() {
       links: [
         { label: "Terms & Conditions", href: "/terms" },
         { label: "Privacy Policy", href: "/privacy" },
+        { label: "About Us", href: "/about" },
         // { label: "FAQ", href: "/faq" }, // If you have a dedicated FAQ page
       ]
     },

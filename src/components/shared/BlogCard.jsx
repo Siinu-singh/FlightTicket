@@ -10,7 +10,7 @@ export function BlogCard({ post }) {
 
   return (
     <Link href={`/blogs/${post.slug}`} passHref>
-      <div className="relative group aspect-w-16 aspect-h-9 sm:aspect-h-10 lg:aspect-h-11 overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer">
+      <div className="relative group aspect-w-16 aspect-h-11 sm:aspect-h-12 lg:aspect-h-13 overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer">
         <Image
           src={post.image}
           alt={post.title}
