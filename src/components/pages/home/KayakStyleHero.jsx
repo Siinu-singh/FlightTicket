@@ -62,7 +62,7 @@ export function KayakStyleHero() {
   const [origin, setOrigin] = React.useState("New Delhi (DEL)");
 
   return (
-    <section className="py-8 md:py-10 bg-slate-100 dark:bg-slate-900/30 px-2 sm:px-4 md:px-6">
+    <section className="py-8 md:py-10 bg-slate-100 dark:bg-slate-900/30 px-2">
       <div className="bg-background dark:bg-card shadow-xl rounded-xl p-4 sm:p-6 md:p-8 mx-auto">
         <div className="grid lg:grid-cols-[3fr_2fr] gap-6 md:gap-8 items-start">
           
@@ -228,7 +228,7 @@ export function KayakStyleHero() {
                   key={img.src + "-right-" + index} 
                   className={cn(
                     "relative overflow-hidden shadow-sm w-full", 
-                    index === 1 ? "h-full" : "h-auto aspect-[4/3]", // Make the middle image take full height, others maintain aspect ratio
+                    index === 1 ? "h-full" : "h-auto aspect-[4/3]", 
                     img.roundingClass
                   )}
                 >
@@ -250,3 +250,4 @@ export function KayakStyleHero() {
     </section>
   );
 }
+
