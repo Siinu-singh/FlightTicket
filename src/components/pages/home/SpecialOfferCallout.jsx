@@ -11,7 +11,7 @@ export function SpecialOfferCallout() {
         <div className="flex items-start space-x-3">
           <div className="flex-shrink-0">
             <Image
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Expert consultant"
               width={40}
               height={40}

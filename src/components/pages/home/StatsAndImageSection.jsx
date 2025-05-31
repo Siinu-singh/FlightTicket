@@ -8,10 +8,10 @@ import { Phone, Users, Briefcase, TrendingUp, Award, CalendarCheck } from "lucid
 import { SpecialOfferCallout } from "./SpecialOfferCallout";
 
 const teamMembers = [
-  { id: 1, src: "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 1", dataAiHint: "professional portrait" },
-  { id: 2, src: "https://images.unsplash.com/photo-1610631066894-62452ccb927c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 2", dataAiHint: "professional portrait" },
-  { id: 3, src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzQ4NTkyOTM2fDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 3", dataAiHint: "professional portrait" },
-  { id: 4, src: "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 4", dataAiHint: "professional portrait" },
+  { id: 1, src: "https://images.unsplash.com/photo-1544168190-79c17527004f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 1", dataAiHint: "professional portrait" },
+  { id: 2, src: "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 2", dataAiHint: "professional portrait" },
+  { id: 3, src: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 3", dataAiHint: "professional portrait" },
+  { id: 4, src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NDg1OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Team member 4", dataAiHint: "professional portrait" },
 ];
 
 const statsData = [
@@ -77,7 +77,7 @@ export function StatsAndImageSection() {
           {/* Right Column */}
           <div className="relative aspect-square md:aspect-video w-full max-h-[380px] md:max-h-[420px] lg:max-h-[480px] rounded-2xl overflow-hidden shadow-2xl group">
             <Image
-              src="https://images.unsplash.com/photo-1515740921-36fe823b1ec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmF2ZWwlMjBhcmNoaXRlY3R1cmUlMjBtb2Rlcm58ZW58MHx8fHwxNzQ4NTkyOTM2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1495202337139-e865ed70fcd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBhcmNoaXRlY3R1cmUlMjBtb2Rlcm58ZW58MHx8fHwxNzQ4NTkyOTM2fDA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Travel architecture modern"
               layout="fill"
               objectFit="cover"
@@ -110,4 +110,3 @@ export function StatsAndImageSection() {
     </section>
   );
 }
-

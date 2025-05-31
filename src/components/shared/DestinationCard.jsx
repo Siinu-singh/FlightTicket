@@ -11,7 +11,7 @@ export function DestinationCard({ destination }) {
 
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full group">
-      <CardHeader className="p-0 relative h-48 sm:h-56">
+      <CardHeader className="p-0 relative h-56 sm:h-64 md:h-72"> {/* Increased image height */}
         <Image
           src={destination.image}
           alt={`Image of ${destination.name}`}
@@ -20,18 +20,19 @@ export function DestinationCard({ destination }) {
           className="transition-transform duration-300 group-hover:scale-105"
           data-ai-hint={destination.dataAiHint}
         />
-        <Button variant="ghost" size="icon" className="absolute top-2 right-2 bg-white/70 hover:bg-white text-rose-500 hover:text-rose-600 h-8 w-8 rounded-full">
+        <Button variant="ghost" size="icon" className="absolute top-2 right-2 bg-white/70 hover:bg-white text-rose-500 hover:text-rose-600 h-8 w-8 rounded-full z-10">
           <Heart className="h-4 w-4" />
         </Button>
         {destination.tags && destination.tags.length > 0 && (
-          <div className="absolute top-2 left-2 flex space-x-1">
+          <div className="absolute top-3 left-3 flex space-x-1.5 z-10">
             {destination.tags.map(tag => (
-              <span key={tag} className={`px-2 py-0.5 text-xs font-semibold rounded-full text-white ${tag === 'New' ? 'bg-green-500' : tag === 'Offer' ? 'bg-rose-500' : 'bg-primary'}`}>
+              <span key={tag} className={`px-2.5 py-1 text-xs font-semibold rounded-full text-white shadow-md ${tag === 'New' ? 'bg-green-500' : tag === 'Offer' ? 'bg-rose-500' : 'bg-primary'}`}>
                 {tag}
               </span>
             ))}
           </div>
         )}
+        {/* Price display removed from CardHeader */}
       </CardHeader>
       <CardContent className="p-4 flex-grow">
         <CardTitle className="text-lg font-semibold mb-1 line-clamp-1">{destination.name}</CardTitle>
@@ -48,8 +49,9 @@ export function DestinationCard({ destination }) {
           </div>
         )}
         <p className="text-xs text-muted-foreground line-clamp-2 mb-3">{destination.description}</p>
+        {/* Price display added to CardContent */}
         {displayPrice && (
-            <div className="text-lg font-bold text-primary">
+            <div className="text-lg font-bold text-primary mt-2">
                 ${displayPrice}<span className="text-xs font-normal text-muted-foreground">/night</span>
             </div>
         )}

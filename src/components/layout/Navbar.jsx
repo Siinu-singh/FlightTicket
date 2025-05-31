@@ -19,29 +19,29 @@ const kayakSheetNavItems = [
     items: [
       { id: 'flights', label: 'Flights', href: '/flights', icon: Plane, activePaths: ['/flights'] },
       { id: 'stays', label: 'Stays', href: '/destinations', icon: Hotel, activePaths: ['/destinations'] },
-      { id: 'car-rental', label: 'Car Rental', href: '#', icon: Car, activePaths: ['/cars'] },
-      { id: 'flight-hotel', label: 'Flight+Hotel', href: '#', icon: Users, activePaths: ['/packages'] },
-      { id: 'ai-travel', label: 'AI Travel', href: '#', icon: Sparkles, activePaths: ['/ai-travel'], isBeta: true },
+      { id: 'car-rental', label: 'Car Rental', href: '#', icon: Car, activePaths: ['/cars'] }, // Placeholder href
+      { id: 'flight-hotel', label: 'Flight+Hotel', href: '#', icon: Users, activePaths: ['/packages'] }, // Placeholder href
+      { id: 'ai-travel', label: 'FlightTicket.ai', href: '#', icon: Sparkles, activePaths: ['/ai-travel'], isBeta: true }, // Placeholder href
     ]
   },
   { type: 'separator' },
   {
     type: 'section',
     items: [
-      { id: 'explore', label: 'Explore', href: '/destinations', icon: Globe },
-      { id: 'direct', label: 'Direct', href: '#', icon: Send },
-      { id: 'best-time', label: 'Best Time to Travel', href: '#', icon: Clock },
-      { id: 'ft-business', label: 'FlightTicket for Business', href: '#', icon: Briefcase, isNew: true },
-      { id: 'trips', label: 'Trips', href: '/blogs', icon: Heart }, 
+      { id: 'explore', label: 'Explore', href: '/destinations', icon: Globe, activePaths: ['/destinations/explore'] }, // Assuming a sub-path or reuse /destinations
+      { id: 'direct', label: 'Direct', href: '#', icon: Send }, // Placeholder href
+      { id: 'best-time', label: 'Best Time to Travel', href: '#', icon: Clock }, // Placeholder href
+      { id: 'ft-business', label: 'FlightTicket for Business', href: '#', icon: Briefcase, isNew: true }, // Placeholder href
+      { id: 'trips', label: 'Trips', href: '/blogs', icon: Heart, activePaths: ['/blogs'] }, // Kept /blogs href, changed label & icon
     ]
   },
   { type: 'separator' },
   {
     type: 'section',
     items: [
-      { id: 'language', label: 'English', href: '#', icon: Languages, hasDropdown: true },
-      { id: 'currency', label: 'Indian rupee', href: '#', icon: Settings2, hasDropdown: true }, 
-      { id: 'feedback', label: 'Feedback', href: '#', icon: MessageSquare },
+      { id: 'language', label: 'English', href: '#', icon: Languages, hasDropdown: true }, // Placeholder href
+      { id: 'currency', label: 'Indian rupee', href: '#', icon: Settings2, hasDropdown: true }, // Placeholder href
+      { id: 'feedback', label: 'Feedback', href: '#', icon: MessageSquare }, // Placeholder href
     ]
   }
 ];
@@ -59,18 +59,17 @@ export function Navbar() {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   if (!isMounted) {
-    // Simplified skeleton loader for the navbar
     return (
       <header className="fixed top-0 left-0 right-0 z-50 w-full border-b bg-background h-16">
-        <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto flex h-full items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-muted rounded"></div>
-            <div className="h-7 w-32 bg-muted rounded"></div>
+            <div className="h-8 w-8 bg-muted rounded"></div> {/* Placeholder for hamburger */}
+            <div className="h-7 w-32 bg-muted rounded"></div> {/* Placeholder for logo */}
           </div>
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-muted rounded hidden sm:block"></div>
-            <div className="h-8 w-20 bg-muted rounded hidden sm:block"></div>
-            <div className="h-8 w-8 bg-muted rounded"></div>
+            <div className="h-8 w-8 bg-muted rounded hidden sm:block"></div> {/* Placeholder for wishlist */}
+            <div className="h-8 w-20 bg-muted rounded hidden sm:block"></div> {/* Placeholder for Book Flight */}
+            <div className="h-8 w-8 bg-muted rounded"></div> {/* Placeholder for ThemeToggle */}
           </div>
         </div>
       </header>
@@ -79,8 +78,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background border-b border-border/75 shadow-sm h-16">
-      <div className="container mx-auto flex h-full items-center justify-between px-2 sm:px-4 lg:px-6">
-        {/* Left: Hamburger Menu & Logo */}
+      <div className="mx-auto flex h-full items-center justify-between">
         <div className="flex items-center">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -92,35 +90,32 @@ export function Navbar() {
               side="left" 
               className="w-full max-w-xs sm:max-w-sm p-0 bg-background dark:bg-card flex flex-col"
             >
-              <SheetHeader className="p-4 border-b border-border">
-                <SheetTitle className="sr-only">Main Navigation Menu</SheetTitle>
-                <FlightTicketLogo /> 
-              </SheetHeader>
-              <div className="flex-1 overflow-y-auto">
+              <SheetTitle className="sr-only">Main Navigation Menu</SheetTitle>
+              <div className="flex-1 overflow-y-auto pt-4">
                 {kayakSheetNavItems.map((section, sectionIndex) => (
                   section.type === 'separator' 
-                  ? <Separator key={`sep-${sectionIndex}`} className="my-2" />
+                  ? <Separator key={`sep-${sectionIndex}`} className="my-2 bg-border/70" />
                   : (
                     <div key={`section-${sectionIndex}`} className="py-2 px-1">
                       {section.items.map((item) => {
                         const IconComponent = item.icon;
-                        const isActive = item.activePaths && item.activePaths.some(p => pathname === p || pathname.startsWith(p + '/'));
+                        const isActive = item.activePaths && item.activePaths.some(p => pathname === p || (p !== '/' && pathname.startsWith(p + '/')));
                         return (
                           <Link
                             key={item.id}
                             href={item.href}
                             onClick={item.href === '#' ? (e) => e.preventDefault() : closeMobileMenu}
                             className={cn(
-                              "flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-medium transition-colors",
+                              "flex items-center gap-3 px-3 py-2.5 rounded-md text-sm transition-colors",
                               isActive
-                               ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                               : "text-foreground hover:bg-muted/70 dark:text-slate-300 dark:hover:bg-slate-700/50"
+                               ? "bg-slate-100 dark:bg-slate-800 text-primary font-medium" 
+                               : "text-gray-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/60" 
                             )}
                           >
-                            {IconComponent && <IconComponent className={cn("h-5 w-5", isActive ? "text-primary" : "text-muted-foreground dark:text-slate-400")} />}
-                            <span className="flex-grow">{item.label}</span>
-                            {item.isBeta && <Badge variant="outline" className="text-xs bg-blue-100 text-blue-700 border-blue-300 dark:bg-blue-700/30 dark:text-blue-300 dark:border-blue-500">BETA</Badge>}
-                            {item.isNew && <Badge variant="outline" className="text-xs bg-green-100 text-green-700 border-green-300 dark:bg-green-700/30 dark:text-green-300 dark:border-green-500">NEW</Badge>}
+                            {IconComponent && <IconComponent className={cn("h-5 w-5", isActive ? "text-primary" : "text-gray-500 dark:text-slate-400")} />}
+                            <span className={cn("flex-grow", isActive ? "text-primary" : "text-gray-800 dark:text-slate-200")}>{item.label}</span>
+                            {item.isBeta && <Badge variant="outline" className="text-xs bg-blue-100 text-blue-700 border-blue-300 dark:bg-blue-800/40 dark:text-blue-300 dark:border-blue-600">BETA</Badge>}
+                            {item.isNew && <Badge variant="outline" className="text-xs bg-green-100 text-green-700 border-green-300 dark:bg-green-800/40 dark:text-green-300 dark:border-green-600">NEW</Badge>}
                             {item.hasDropdown && <ChevronDown className="h-4 w-4 text-muted-foreground ml-auto" />}
                           </Link>
                         );
@@ -134,12 +129,11 @@ export function Navbar() {
               </div>
             </SheetContent>
           </Sheet>
-           <Link href="/" className="ml-2 sm:ml-3" aria-label="FlightTicket Home">
+           <Link href="/" aria-label="FlightTicket Home"> 
               <FlightTicketLogo />
            </Link>
         </div>
        
-        {/* Right: Icons and Buttons */}
         <div className="flex items-center gap-1 sm:gap-2">
           <Button variant="ghost" size="icon" className="text-foreground hover:text-primary hover:bg-muted/50 hidden sm:inline-flex">
             <Heart className="h-5 w-5" />

@@ -1,7 +1,8 @@
 
 import { KayakStyleHero } from "@/components/pages/home/KayakStyleHero"; 
-import { ValuePropsSection } from "@/components/pages/home/ValuePropsSection"; // Import the new section
+import { ValuePropsSection } from "@/components/pages/home/ValuePropsSection";
 import { ImageReelSection } from "@/components/pages/home/ImageReelSection"; 
+import { SearchByDestinationSection } from "@/components/pages/home/SearchByDestinationSection"; // New Import
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { DestinationCard } from "@/components/shared/DestinationCard";
 import { FlightCard } from "@/components/shared/FlightCard";
@@ -36,7 +37,7 @@ export default async function HomePage() {
         <KayakStyleHero />
       </div>
 
-      <ValuePropsSection /> {/* Add the new section here */}
+      <ValuePropsSection /> 
 
       <ImageReelSection /> 
 
@@ -67,7 +68,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
+      
+      <SearchByDestinationSection /> {/* New Section Added Here */}
       <FaqSection />
       <StatsAndImageSection />
     </>

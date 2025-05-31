@@ -8,10 +8,10 @@ const valuePropsData = [
   {
     id: "compare",
     icons: [
-      { src: "https://images.unsplash.com/photo-1516306305827-b74eb3993a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 1", dataAiHint: "airline logo" },
-      { src: "https://images.unsplash.com/photo-1544703097-5b4778d48c27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 2", dataAiHint: "airline logo" },
-      { src: "https://images.unsplash.com/photo-1649472499016-13c9d238ecd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 3", dataAiHint: "airline logo" },
-      { src: "https://images.unsplash.com/photo-1649472499016-13c9d238ecd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 4", dataAiHint: "airline logo" },
+      { src: "https://images.unsplash.com/photo-1551522133-1c87c80df51c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 1", dataAiHint: "airline logo" },
+      { src: "https://images.unsplash.com/photo-1683576235059-ccdf98d52e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWlybGluZSUyMGxvZ298ZW58MHx8fHwxNzQ4NjAzMjgyfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 2", dataAiHint: "airline logo" },
+      { src: "https://images.unsplash.com/photo-1683576221429-5944d77d37e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhaXJsaW5lJTIwbG9nb3xlbnwwfHx8fDE3NDg2MDMyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 3", dataAiHint: "airline logo" },
+      { src: "https://images.unsplash.com/photo-1683576235059-ccdf98d52e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWlybGluZSUyMGxvZ298ZW58MHx8fHwxNzQ4NjAzMjgyfDA&ixlib=rb-4.1.0&q=80&w=1080", alt: "Airline 4", dataAiHint: "airline logo" },
     ],
     title: "Save when you compare",
     subtitle: "More deals. More sites. One search.",
@@ -19,9 +19,9 @@ const valuePropsData = [
   {
     id: "searches",
     avatars: [
-      { src: "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4MXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 1", dataAiHint: "user avatar" },
-      { src: "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4MXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 2", dataAiHint: "user avatar" },
-      { src: "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4MXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 3", dataAiHint: "user avatar" },
+      { src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4Mnww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 1", dataAiHint: "user avatar" },
+      { src: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4MXww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 2", dataAiHint: "user avatar" },
+      { src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTc0ODYwMzI4Mnww&ixlib=rb-4.1.0&q=80&w=1080", alt: "User 3", dataAiHint: "user avatar" },
     ],
     title: "41,000,000+",
     subtitle: "searches this week",

@@ -1,0 +1,140 @@
+
+[
+  {
+    "id": "london-flights",
+    "title": "London flights",
+    "groupSlug": "london",
+    "links": [
+      { "label": "Flights to Heathrow", "linkSlug": "to-heathrow", "description": "Find flights to London Heathrow (LHR)." },
+      { "label": "Flights to Paris from London", "linkSlug": "to-paris-from-london", "description": "Explore options from London to Paris." },
+      { "label": "Cheap weekend flights London", "linkSlug": "weekend-deals-london", "description": "Discover weekend getaways from London." },
+      { "label": "Flights to Gatwick (LGW)", "linkSlug": "to-gatwick", "description": "Find flights to London Gatwick (LGW)." },
+      { "label": "Flights to Stansted (STN)", "linkSlug": "to-stansted", "description": "Find flights to London Stansted (STN)." }
+    ]
+  },
+  {
+    "id": "new-york-flights",
+    "title": "New York flights",
+    "groupSlug": "new-york",
+    "links": [
+      { "label": "Flights to JFK Airport", "linkSlug": "to-jfk", "description": "Find flights to John F. Kennedy International Airport (JFK)." },
+      { "label": "Flights from New York to Los Angeles", "linkSlug": "to-los-angeles-from-new-york", "description": "Explore options from New York to Los Angeles." },
+      { "label": "Flights to LaGuardia (LGA)", "linkSlug": "to-laguardia", "description": "Find flights to LaGuardia Airport (LGA)." },
+      { "label": "Flights to Newark (EWR)", "linkSlug": "to-newark", "description": "Find flights to Newark Liberty International Airport (EWR)." }
+    ]
+  },
+  {
+    "id": "europe-flights",
+    "title": "Europe flights",
+    "groupSlug": "europe",
+    "links": [
+      { "label": "Flights to Paris", "linkSlug": "to-paris", "description": "Find flight deals to Paris, France." },
+      { "label": "Flights to Rome", "linkSlug": "to-rome", "description": "Explore flight options to Rome, Italy." },
+      { "label": "Flights to Amsterdam", "linkSlug": "to-amsterdam", "description": "Discover flights to Amsterdam, Netherlands." },
+      { "label": "Flights to Berlin", "linkSlug": "to-berlin", "description": "Find flight deals to Berlin, Germany." },
+      { "label": "Flights to Madrid (MAD)", "linkSlug": "to-madrid", "description": "Explore flights to Madrid-Barajas Adolfo Suárez Airport." },
+      { "label": "Flights to Lisbon", "linkSlug": "to-lisbon", "description": "Find flight deals to Lisbon, Portugal." },
+      { "label": "Flights to Barcelona", "linkSlug": "to-barcelona", "description": "Explore flight options to Barcelona, Spain." }
+    ]
+  },
+  {
+    "id": "india-flights",
+    "title": "India flights",
+    "groupSlug": "india",
+    "links": [
+      { "label": "Flights to New Delhi", "linkSlug": "to-new-delhi", "description": "Find flight deals to New Delhi, India." },
+      { "label": "Flights to Mumbai", "linkSlug": "to-mumbai", "description": "Explore flight options to Mumbai, India." },
+      { "label": "Flights from Delhi to Dubai", "linkSlug": "from-delhi-to-dubai", "description": "Explore options from Delhi to Dubai." }
+    ]
+  },
+  {
+    "id": "dubai-flights",
+    "title": "Dubai flights",
+    "groupSlug": "dubai",
+    "links": [
+      { "label": "Flights to Dubai (DXB)", "linkSlug": "to-dubai-dxb", "description": "Find flights to Dubai International Airport." },
+      { "label": "Cheap flights from Dubai", "linkSlug": "from-dubai", "description": "Discover cheap flights departing from Dubai." }
+    ]
+  },
+  {
+    "id": "chicago-flights",
+    "title": "Chicago flights",
+    "groupSlug": "chicago",
+    "links": [
+      { "label": "Flights to O'Hare (ORD)", "linkSlug": "to-ohare", "description": "Find flights to Chicago O'Hare International Airport." },
+      { "label": "Flights from Chicago to Miami", "linkSlug": "to-miami-from-chicago", "description": "Explore options from Chicago to Miami." }
+    ]
+  },
+   {
+    "id": "bangkok-flights",
+    "title": "Bangkok flights",
+    "groupSlug": "bangkok",
+    "links": [
+      { "label": "Flights to Suvarnabhumi (BKK)", "linkSlug": "to-suvarnabhumi", "description": "Find flights to Suvarnabhumi Airport." },
+      { "label": "Flights from Bangkok to Singapore", "linkSlug": "to-singapore-from-bangkok", "description": "Explore options from Bangkok to Singapore." }
+    ]
+  },
+  {
+    "id": "us-flights",
+    "title": "United States flights",
+    "groupSlug": "united-states",
+    "links": [
+      { "label": "Domestic Flights USA", "linkSlug": "domestic-usa", "description": "Find domestic flights within the USA." },
+      { "label": "Flights to New York", "linkSlug": "to-new-york", "description": "Explore flight options to New York City." },
+      { "label": "Flights to San Francisco", "linkSlug": "to-san-francisco", "description": "Find flight deals to San Francisco, CA." },
+      { "label": "Flights to Miami", "linkSlug": "to-miami", "description": "Explore flight options to Miami, FL." },
+      { "label": "Flights to Los Angeles (LAX)", "linkSlug": "to-los-angeles", "description": "Find flights to Los Angeles International Airport." },
+      { "label": "Flights to Orlando (MCO)", "linkSlug": "to-orlando", "description": "Explore flights to Orlando International Airport." }
+    ]
+  },
+  {
+    "id": "tokyo-flights",
+    "title": "Tokyo flights",
+    "groupSlug": "tokyo",
+    "links": [
+      { "label": "Flights to Narita (NRT)", "linkSlug": "to-narita", "description": "Find flights to Narita International Airport." },
+      { "label": "Flights to Haneda (HND)", "linkSlug": "to-haneda", "description": "Explore flights to Haneda Airport." },
+      { "label": "Flights from Tokyo to Seoul", "linkSlug": "from-tokyo-to-seoul", "description": "Explore options from Tokyo to Seoul." }
+    ]
+  },
+  {
+    "id": "australia-flights",
+    "title": "Australia flights",
+    "groupSlug": "australia",
+    "links": [
+      { "label": "Flights to Sydney (SYD)", "linkSlug": "to-sydney", "description": "Find flights to Sydney Kingsford Smith Airport." },
+      { "label": "Flights to Melbourne (MEL)", "linkSlug": "to-melbourne", "description": "Explore flights to Melbourne Airport." },
+      { "label": "Flights to Perth (PER)", "linkSlug": "to-perth", "description": "Find flights to Perth Airport." }
+    ]
+  },
+  {
+    "id": "canada-flights",
+    "title": "Canada flights",
+    "groupSlug": "canada",
+    "links": [
+      { "label": "Flights to Toronto (YYZ)", "linkSlug": "to-toronto", "description": "Find flights to Toronto Pearson International Airport." },
+      { "label": "Flights to Vancouver (YVR)", "linkSlug": "to-vancouver", "description": "Explore flights to Vancouver International Airport." },
+      { "label": "Flights to Montreal (YUL)", "linkSlug": "to-montreal", "description": "Find flights to Montréal-Trudeau International Airport." }
+    ]
+  },
+  {
+    "id": "sea-flights",
+    "title": "Southeast Asia flights",
+    "groupSlug": "southeast-asia",
+    "links": [
+      { "label": "Flights to Singapore (SIN)", "linkSlug": "to-singapore", "description": "Find flights to Singapore Changi Airport." },
+      { "label": "Flights to Kuala Lumpur (KUL)", "linkSlug": "to-kuala-lumpur", "description": "Explore flights to Kuala Lumpur International Airport." },
+      { "label": "Flights to Ho Chi Minh City (SGN)", "linkSlug": "to-ho-chi-minh-city", "description": "Find flights to Tan Son Nhat International Airport." }
+    ]
+  },
+  {
+    "id": "south-america-flights",
+    "title": "South America flights",
+    "groupSlug": "south-america",
+    "links": [
+      { "label": "Flights to Buenos Aires (EZE)", "linkSlug": "to-buenos-aires", "description": "Find flights to Buenos Aires Ministro Pistarini International Airport." },
+      { "label": "Flights to Lima (LIM)", "linkSlug": "to-lima", "description": "Explore flights to Jorge Chávez International Airport in Lima." },
+      { "label": "Flights to Santiago (SCL)", "linkSlug": "to-santiago", "description": "Find flights to Arturo Merino Benítez Airport in Santiago." }
+    ]
+  }
+]
