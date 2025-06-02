@@ -11,7 +11,7 @@ import { ExpandableContentSection } from "@/components/pages/home/ExpandableCont
 import { StatsAndImageSection } from "@/components/pages/home/StatsAndImageSection";
 import destinationsData from "@/data/destinations.json";
 import flightsData from "@/data/flights.json";
-import { flightTicketIntroText } from "@/data/homePageIntro.js"; // Import the text
+import { flightTicketIntroText } from "@/data/homePageIntro.js"; 
 import { cn } from "@/lib/utils"; 
 
 export const metadata = {
