@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Menu, X, Heart, UserCircle, Plane, Hotel, Car, Users, Sparkles, Globe, Send, Clock, Briefcase, Languages, Settings2, ChevronDown, ChevronUp, MessageSquare, Ticket } from "lucide-react";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { useState, useEffect } from "react";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"; // Removed SheetHeader as it's not used
+import { useState, useEffect, Fragment } from "react"; // Added Fragment
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { FlightTicketLogo } from "./FlightTicketLogo";
@@ -91,12 +91,12 @@ export function Navbar() {
               className="w-full max-w-xs sm:max-w-sm p-0 bg-background dark:bg-card flex flex-col"
             >
               <SheetTitle className="sr-only">Main Navigation Menu</SheetTitle>
-              <div className="flex-1 overflow-y-auto pt-4">
+              <div className="flex-1 overflow-y-auto pt-4 px-1">
                 {kayakSheetNavItems.map((section, sectionIndex) => (
                   section.type === 'separator' 
                   ? <Separator key={`sep-${sectionIndex}`} className="my-2 bg-border/70" />
                   : (
-                    <div key={`section-${sectionIndex}`} className="py-2 px-1">
+                    <Fragment key={`section-${sectionIndex}`}>
                       {section.items.map((item) => {
                         const IconComponent = item.icon;
                         const isActive = item.activePaths && item.activePaths.some(p => pathname === p || (p !== '/' && pathname.startsWith(p + '/')));
@@ -120,12 +120,20 @@ export function Navbar() {
                           </Link>
                         );
                       })}
-                    </div>
+                    </Fragment>
                   )
                 ))}
               </div>
-               <div className="p-4 border-t border-border mt-auto">
-                 <ThemeToggle />
+               <div className="p-4 border-t border-border/70 flex flex-col items-center space-y-3">
+                 <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90">
+                    <Link href="/flights" onClick={closeMobileMenu}>
+                        <Ticket className="h-4 w-4 mr-2" />
+                        Book Flight
+                    </Link>
+                 </Button>
+                 <div className="w-full flex justify-center">
+                    <ThemeToggle />
+                 </div>
               </div>
             </SheetContent>
           </Sheet>
@@ -139,7 +147,7 @@ export function Navbar() {
             <Heart className="h-5 w-5" />
             <span className="sr-only">Wishlist</span>
           </Button>
-          <Button asChild variant="outline" size="sm" className="text-xs sm:text-sm h-8 px-2 sm:px-3 border-primary/50 hover:bg-primary/10 text-primary hover:border-primary">
+          <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex text-xs sm:text-sm h-8 px-2 sm:px-3 border-primary/50 hover:bg-primary/10 text-primary hover:border-primary">
             <Link href="/flights">
               <Ticket className="h-3.5 w-3.5 mr-1.5 hidden sm:inline-block" />
               Book Flight
