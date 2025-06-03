@@ -16,7 +16,7 @@ const serviceTabsData = [
   { id: 'stays', label: 'Stays', icon: Hotel, href: '/destinations' },
   { id: 'car-rental', label: 'Car Rental', icon: Car, href: '#' },
   { id: 'flight-hotel', label: 'Flight+Hotel', icon: Users, href: '#' },
-  { id: 'ai-travel', label: 'KAYAK.ai', icon: Sparkles, href: '#', isKayakAi: true },
+  { id: 'ai-travel', label: 'FlightTicket.ai', icon: Sparkles, href: '#', isKayakAi: true },
 ];
 
 const collageImagesData = [
@@ -63,15 +63,15 @@ export function KayakStyleHero() {
 
   return (
     <section className="py-8 md:py-10 bg-slate-100 dark:bg-slate-900/30 px-2">
-      <div className="bg-background dark:bg-card shadow-xl rounded-xl p-4 sm:p-6 md:p-8 mx-auto">
+      <div className="bg-background dark:bg-card shadow-xl rounded-xl p-3 sm:p-4 md:p-6 mx-auto">
         <div className="grid lg:grid-cols-[3fr_2fr] gap-6 md:gap-8 items-start">
           
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground tracking-tight">
               Compare deals from 100s of sites.
             </h1>
 
-            <div className="flex items-center border-b border-border pb-2 mb-4 overflow-x-auto hide-scrollbar space-x-4">
+            <div className="flex items-center border-b border-border pb-2 mb-4 overflow-x-auto hide-scrollbar space-x-2 sm:space-x-3">
               {serviceTabsData.map((tab) => {
                 const isCurrentTabActive = activeTab === tab.id;
                 const iconColorClass = isCurrentTabActive
@@ -91,7 +91,7 @@ export function KayakStyleHero() {
                     key={tab.id}
                     variant="ghost"
                     className={cn(
-                      "flex flex-col items-center justify-center p-2.5 rounded-lg transition-all duration-150 focus:z-10 group w-[76px] h-[72px] shrink-0", 
+                      "flex flex-col items-center justify-center p-2.5 rounded-lg transition-all duration-150 focus:z-10 group w-[70px] h-[68px] sm:w-[76px] sm:h-[72px] shrink-0", 
                       isCurrentTabActive
                         ? tab.isKayakAi
                           ? 'bg-purple-600 shadow-md ring-2 ring-purple-400' 
@@ -101,8 +101,8 @@ export function KayakStyleHero() {
                     )}
                     onClick={() => setActiveTab(tab.id)}
                   >
-                    <tab.icon className={cn("h-6 w-6 mb-1", iconColorClass)} />
-                    <span className={cn("text-[11px] leading-tight", textColorClass)}>{tab.label}</span>
+                    <tab.icon className={cn("h-5 w-5 sm:h-6 sm:w-6 mb-1", iconColorClass)} />
+                    <span className={cn("text-[10px] sm:text-[11px] leading-tight text-center", textColorClass)}>{tab.label}</span>
                   </Button>
                 );
               })}
@@ -112,17 +112,18 @@ export function KayakStyleHero() {
               <Button variant="outline" className="text-xs h-8 px-3 font-normal text-muted-foreground hover:bg-muted/50 border-input">
                 Return <ChevronDown className="ml-1 h-3 w-3"/>
               </Button>
+               {/* Add One-way and Multi-city buttons here if needed, styled similarly */}
             </div>
 
             <div className="space-y-3">
-              <div className="grid grid-cols-[1fr_auto_1fr] gap-0.5 items-center border border-input rounded-md focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all">
-                <div className="relative">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:border sm:border-input sm:rounded-md sm:focus-within:ring-2 sm:focus-within:ring-primary sm:focus-within:border-primary transition-all gap-2 sm:gap-0">
+                <div className="relative w-full">
                   <Input
                     type="text"
                     value={origin}
                     onChange={(e) => setOrigin(e.target.value)}
                     placeholder="From?"
-                    className="pl-3 pr-8 py-2.5 text-sm h-12 rounded-l-md border-0 focus:ring-0 bg-transparent"
+                    className="pl-3 pr-8 py-2.5 text-sm h-12 rounded-md sm:rounded-none sm:rounded-l-md border border-input sm:border-0 focus:ring-0 bg-transparent w-full"
                   />
                   {origin && (
                      <Button variant="ghost" size="icon" className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7 text-muted-foreground hover:bg-muted/50" onClick={() => setOrigin('')}>
@@ -130,20 +131,23 @@ export function KayakStyleHero() {
                      </Button>
                   )}
                 </div>
-                <div className="px-1.5 text-muted-foreground">
-                  <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-muted/50">
+                <div className="text-muted-foreground sm:px-1.5 my-1 sm:my-0 self-center"> {/* Self-center for stacked view */}
+                  <Button variant="ghost" size="icon" className="h-8 w-8 hover:bg-muted/50 mx-auto sm:mx-0 block">
                       <ArrowRightLeft className="h-4 w-4"/>
                   </Button>
                 </div>
-                <Input
-                  type="text"
-                  placeholder="To?"
-                  className="pl-3 pr-3 py-2.5 text-sm h-12 rounded-r-md border-0 focus:ring-0 bg-transparent"
-                />
+                <div className="relative w-full">
+                  <Input
+                    type="text"
+                    placeholder="To?"
+                    className="pl-3 pr-3 py-2.5 text-sm h-12 rounded-md sm:rounded-none sm:rounded-r-md border border-input sm:border-0 focus:ring-0 bg-transparent w-full"
+                  />
+                  {/* Potentially add a clear button for destination too */}
+                </div>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_auto] md:grid-cols-[repeat(2,minmax(0,1fr))_auto] gap-2 items-center">
-                  <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2 sm:grid-cols-[1fr_1fr_auto] md:grid-cols-[repeat(2,minmax(0,1fr))_auto]">
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                       <Popover>
                       <PopoverTrigger asChild>
                           <Button
@@ -176,6 +180,7 @@ export function KayakStyleHero() {
                               !returnDate && "text-muted-foreground"
                           )}
                           >
+                          {/* Icon removed to match mobile screenshot if date is not set */}
                           {returnDate ? format(returnDate, "ccc d/M") : <span className="text-muted-foreground">Return</span>}
                           </Button>
                       </PopoverTrigger>
@@ -198,9 +203,14 @@ export function KayakStyleHero() {
                       <UsersRound className="mr-1.5 h-4 w-4 text-muted-foreground flex-shrink-0" />
                       <span className="truncate">1 adult, Economy</span>
                   </Button>
-                  <Button type="submit" size="icon" className="h-11 w-11 bg-orange-500 hover:bg-orange-600 text-white rounded-md flex-shrink-0">
-                      <SearchIcon className="h-5 w-5" />
-                      <span className="sr-only">Search</span>
+
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="h-11 bg-orange-500 hover:bg-orange-600 text-white rounded-md w-full sm:w-11 sm:p-0 sm:flex-shrink-0 flex items-center justify-center sm:aspect-square"
+                  >
+                      <SearchIcon className="h-5 w-5 sm:mx-auto" />
+                      <span className="sm:sr-only ml-2 sm:ml-0">Search</span>
                   </Button>
               </div>
             </div>
