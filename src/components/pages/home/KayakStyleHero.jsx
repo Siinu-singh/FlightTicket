@@ -97,7 +97,8 @@ export function KayakStyleHero() {
                           ? 'bg-purple-600 shadow-md ring-2 ring-purple-400' 
                           : 'bg-orange-500 shadow-md ring-2 ring-orange-400' 
                         : 'bg-card hover:bg-muted/70 dark:hover:bg-slate-700/50 border border-input', 
-                      tab.isKayakAi && !isCurrentTabActive && 'border-purple-300/50 dark:border-purple-700/50 hover:border-purple-400' 
+                      tab.isKayakAi && !isCurrentTabActive && 'border-purple-300/50 dark:border-purple-700/50 hover:border-purple-400',
+                      tab.id === 'ai-travel' && 'hidden sm:flex' // Hide on mobile, show from sm breakpoint
                     )}
                     onClick={() => setActiveTab(tab.id)}
                   >
@@ -147,7 +148,7 @@ export function KayakStyleHero() {
               </div>
               
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-[1fr_1fr_auto] md:grid-cols-[repeat(2,minmax(0,1fr))_auto]">
-                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                  <div className="grid grid-cols-1 gap-2 xxs:grid-cols-2"> {/* Stacks on very small, then 2-col */}
                       <Popover>
                       <PopoverTrigger asChild>
                           <Button
