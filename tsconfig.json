@@ -29,9 +29,11 @@
     "strict": false
   },
   "include": [
-    "next-env.d.ts",
     "**/*.js",
     "**/*.jsx",
+    ".next/types/**/*.js",
+    ".next/types/**/*.js",
+    "next-env.d.js",
     ".next/types/**/*.ts"
   ],
   "exclude": [
