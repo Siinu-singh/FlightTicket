@@ -59,7 +59,7 @@ export default async function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
             title="Featured Flights"
-            subtitle="Grab these amazing flight deals before they're gone. Book your ticket today!"
+            subtitle="Grab these amazing flight deals before they're gone. Book your ticket today!"  
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
             {featuredFlights.map((flight) => (

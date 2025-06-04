@@ -19,7 +19,7 @@ const getUniqueTypes = (destinations) => {
 };
 
 export default function DestinationsPage() { 
-  console.log("DEBUG: Rendering DestinationsPage (with filter sidebar and advanced features)"); 
+  // console.log("DEBUG: Rendering DestinationsPage (with filter sidebar and advanced features)"); 
 
   const nextSearchParams = useSearchParams(); 
 

@@ -40,7 +40,7 @@ export function SearchByDestinationSection() {
                   {group.links.map((link) => (
                     <li key={link.linkSlug}>
                       <Link 
-                        href={`/flights/by-destination/${group.groupSlug}/${link.linkSlug}`} 
+                        href={`/destinations/`} 
                         className="text-muted-foreground hover:text-primary hover:underline transition-colors"
                       >
                         {link.label}

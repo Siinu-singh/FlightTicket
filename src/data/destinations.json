@@ -1,4 +1,3 @@
-
 [
   {
     "id": "paris",
@@ -6,18 +5,27 @@
     "country": "France",
     "description": "The enchanting capital of France, known for its art, fashion, and iconic landmarks.",
     "longDescription": "Paris, often called the 'City of Light,' is a global center for art, fashion, gastronomy, and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond iconic landmarks like the Eiffel Tower and the Louvre, Paris is a city of charming neighborhoods, world-class museums, and vibrant café culture.",
-    "image": "https://images.unsplash.com/photo-1492136344046-866c85e0bf04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXJpcyUyMGxhbmRtYXJrJTIwZWlmZmVsJTIwdG93ZXJ8ZW58MHx8fHwxNzQ4NTkzMTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954493/France_aeodlk.jpg",
     "dataAiHint": "paris landmark eiffel tower",
-    "attractions": [
-      { "name": "Eiffel Tower", "icon": "Tower" },
-      { "name": "Louvre Museum", "icon": "Palette" },
-      { "name": "Notre-Dame Cathedral", "icon": "Church" }
-    ],
     "bestTimeToVisit": "Spring (April-June) or Fall (September-October)",
     "type": ["City", "Historic"],
     "averageRating": 4.8,
     "pricePerNight": 230,
-    "tags": ["Popular"]
+    "tags": ["Popular"],
+    "attractions": [
+      {
+        "name": "Eiffel Tower",
+        "icon": "Tower"
+      },
+      {
+        "name": "Louvre Museum",
+        "icon": "Palette"
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "icon": "Church"
+      }
+    ]
   },
   {
     "id": "tokyo",
@@ -25,18 +33,27 @@
     "country": "Japan",
     "description": "A dazzling metropolis where traditional culture meets futuristic innovation.",
     "longDescription": "Tokyo, Japan’s bustling capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater.",
-    "image": "https://images.unsplash.com/photo-1493514789931-586cb221d7a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b2t5byUyMHNreWxpbmUlMjBuZW9ufGVufDB8fHx8MTc0ODU5MzE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954267/Japan_vzwdnv.jpg",
     "dataAiHint": "tokyo skyline neon",
-    "attractions": [
-      { "name": "Shibuya Crossing", "icon": "Users" },
-      { "name": "Senso-ji Temple", "icon": "Landmark" },
-      { "name": "Tokyo Skytree", "icon": "Youtube" }
-    ],
     "bestTimeToVisit": "Spring (March-May) or Fall (September-November)",
     "type": ["City", "Modern"],
     "averageRating": 4.7,
     "pricePerNight": 180,
-    "tags": ["Featured", "Offer"]
+    "tags": ["Featured", "Offer"],
+    "attractions": [
+      {
+        "name": "Shibuya Crossing",
+        "icon": "Users"
+      },
+      {
+        "name": "Senso-ji Temple",
+        "icon": "Landmark"
+      },
+      {
+        "name": "Tokyo Skytree",
+        "icon": "Youtube"
+      }
+    ]
   },
   {
     "id": "rome",
@@ -44,17 +61,26 @@
     "country": "Italy",
     "description": "The Eternal City, offering a stunning blend of ancient history and vibrant street life.",
     "longDescription": "Rome, Italy’s capital, is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display. Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. Vatican City, headquarters of the Roman Catholic Church, has St. Peter’s Basilica and the Vatican Museums, which house masterpieces such as Michelangelo’s Sistine Chapel frescoes.",
-    "image": "https://images.unsplash.com/photo-1650981918863-a8c06ef640f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb21lJTIwcnVpbnMlMjBjb2xvc3NldW18ZW58MHx8fHwxNzQ4NTkzMTg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954266/Italy_rn0hib.jpg",
     "dataAiHint": "rome ruins colosseum",
-    "attractions": [
-      { "name": "Colosseum", "icon": "Landmark" },
-      { "name": "Roman Forum", "icon": "ScrollText" },
-      { "name": "Vatican City", "icon": "Church" }
-    ],
     "bestTimeToVisit": "April to June and September to October",
     "type": ["City", "Historic"],
     "averageRating": 4.9,
-    "pricePerNight": 190
+    "pricePerNight": 190,
+    "attractions": [
+      {
+        "name": "Colosseum",
+        "icon": "Landmark"
+      },
+      {
+        "name": "Roman Forum",
+        "icon": "ScrollText"
+      },
+      {
+        "name": "Vatican City",
+        "icon": "Church"
+      }
+    ]
   },
   {
     "id": "new-york",
@@ -62,18 +88,27 @@
     "country": "USA",
     "description": "The city that never sleeps, a melting pot of cultures and iconic sights.",
     "longDescription": "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.",
-    "image": "https://images.unsplash.com/photo-1527267207156-3372670819dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuZXclMjB5b3JrJTIwY2l0eXNjYXBlfGVufDB8fHx8MTc0ODU5MzE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954551/USA_zberpy.jpg",
     "dataAiHint": "new york cityscape",
-    "attractions": [
-      { "name": "Statue of Liberty", "icon": "Flame" },
-      { "name": "Central Park", "icon": "Trees" },
-      { "name": "Times Square", "icon": "RectangleEllipsis" }
-    ],
     "bestTimeToVisit": "April to June and September to November",
     "type": ["City", "Modern"],
     "averageRating": 4.6,
     "pricePerNight": 250,
-    "tags": ["New"]
+    "tags": ["New"],
+    "attractions": [
+      {
+        "name": "Statue of Liberty",
+        "icon": "Flame"
+      },
+      {
+        "name": "Central Park",
+        "icon": "Trees"
+      },
+      {
+        "name": "Times Square",
+        "icon": "RectangleEllipsis"
+      }
+    ]
   },
   {
     "id": "london",
@@ -81,17 +116,26 @@
     "country": "United Kingdom",
     "description": "A historic global hub with iconic landmarks and diverse culture.",
     "longDescription": "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954544/United_Kingdom_gnxwrx.jpg",
     "dataAiHint": "london big ben",
-    "attractions": [
-      { "name": "British Museum", "icon": "Landmark" },
-      { "name": "Tower of London", "icon": "Building" },
-      { "name": "Buckingham Palace", "icon": "Landmark" }
-    ],
     "bestTimeToVisit": "May to September",
     "type": ["City", "Historic"],
     "averageRating": 4.7,
-    "pricePerNight": 220
+    "pricePerNight": 220,
+    "attractions": [
+      {
+        "name": "British Museum",
+        "icon": "Landmark"
+      },
+      {
+        "name": "Tower of London",
+        "icon": "Building"
+      },
+      {
+        "name": "Buckingham Palace",
+        "icon": "Landmark"
+      }
+    ]
   },
   {
     "id": "barcelona",
@@ -99,18 +143,27 @@
     "country": "Spain",
     "description": "Known for its unique architecture by Gaudí and vibrant street life.",
     "longDescription": "Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is known for its art and architecture. The fantastical Sagrada Família church and other modernist landmarks designed by Antoni Gaudí dot the city. Museu Picasso and Fundació Joan Miró feature modern art by their namesakes. City history museum MUHBA, includes several Roman archaeological sites.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954267/Spain_lmfhoq.jpg",
     "dataAiHint": "barcelona architecture gaudi",
-    "attractions": [
-      { "name": "Sagrada Família", "icon": "Church" },
-      { "name": "Park Güell", "icon": "Trees" },
-      { "name": "Gothic Quarter", "icon": "Building" }
-    ],
     "bestTimeToVisit": "May to June and September to October",
     "type": ["City", "Artistic"],
     "averageRating": 4.6,
     "pricePerNight": 170,
-    "tags": ["Offer"]
+    "tags": ["Offer"],
+    "attractions": [
+      {
+        "name": "Sagrada Família",
+        "icon": "Church"
+      },
+      {
+        "name": "Park Güell",
+        "icon": "Trees"
+      },
+      {
+        "name": "Gothic Quarter",
+        "icon": "Building"
+      }
+    ]
   },
   {
     "id": "amsterdam",
@@ -118,17 +171,26 @@
     "country": "Netherlands",
     "description": "Famous for its canals, artistic heritage, and elaborate houses.",
     "longDescription": "Amsterdam is known for its artistic heritage, elaborate canal system and narrow houses with gabled facades, legacies of the city’s 17th-century Golden Age. Its Museum District houses the Van Gogh Museum, works by Rembrandt and Vermeer at the Rijksmuseum, and modern art at the Stedelijk. Cycling is key to the city’s character, and there are numerous bike paths.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954267/Netherlands_inaqg8.jpg",
     "dataAiHint": "amsterdam canals cityscape",
-    "attractions": [
-      { "name": "Rijksmuseum", "icon": "Palette" },
-      { "name": "Anne Frank House", "icon": "ScrollText" },
-      { "name": "Canal Cruise", "icon": "Ship" }
-    ],
     "bestTimeToVisit": "April to May and September to November",
     "type": ["City", "Historic"],
     "averageRating": 4.5,
-    "pricePerNight": 190
+    "pricePerNight": 190,
+    "attractions": [
+      {
+        "name": "Rijksmuseum",
+        "icon": "Palette"
+      },
+      {
+        "name": "Anne Frank House",
+        "icon": "ScrollText"
+      },
+      {
+        "name": "Canal Cruise",
+        "icon": "Ship"
+      }
+    ]
   },
   {
     "id": "sydney",
@@ -136,17 +198,26 @@
     "country": "Australia",
     "description": "Home to the iconic Opera House and beautiful Bondi Beach.",
     "longDescription": "Sydney, capital of New South Wales and one of Australia's largest cities, is best known for its harbourfront Sydney Opera House, with a distinctive sail-like design. Massive Darling Harbour and the smaller Circular Quay port are hubs of waterside life, with the arched Harbour Bridge and esteemed Royal Botanic Garden nearby. Sydney Tower’s outdoor platform, the Skywalk, offers 360-degree views of the city, harbour and suburbs.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954460/Australia_svsbds.jpg",
     "dataAiHint": "sydney harbor city",
-    "attractions": [
-      { "name": "Sydney Opera House", "icon": "Landmark" },
-      { "name": "Bondi Beach", "icon": "Sun" },
-      { "name": "Harbour Bridge", "icon": "Building" }
-    ],
     "bestTimeToVisit": "September to November and March to May",
     "type": ["City", "Coastal"],
     "averageRating": 4.7,
-    "pricePerNight": 210
+    "pricePerNight": 210,
+    "attractions": [
+      {
+        "name": "Sydney Opera House",
+        "icon": "Landmark"
+      },
+      {
+        "name": "Bondi Beach",
+        "icon": "Sun"
+      },
+      {
+        "name": "Harbour Bridge",
+        "icon": "Building"
+      }
+    ]
   },
   {
     "id": "bali",
@@ -154,18 +225,27 @@
     "country": "Indonesia",
     "description": "An island paradise known for its forested volcanic mountains, rice paddies, and beaches.",
     "longDescription": "Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also known for its yoga and meditation retreats.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954266/Indonesia_ouzoeg.jpg",
     "dataAiHint": "bali island paradise",
-    "attractions": [
-      { "name": "Ubud Monkey Forest", "icon": "Trees" },
-      { "name": "Tanah Lot Temple", "icon": "Church" },
-      { "name": "Mount Batur", "icon": "Mountain" }
-    ],
     "bestTimeToVisit": "May to September",
     "type": ["Island", "Nature", "Coastal"],
     "averageRating": 4.8,
     "pricePerNight": 150,
-    "tags": ["Featured"]
+    "tags": ["Featured"],
+    "attractions": [
+      {
+        "name": "Ubud Monkey Forest",
+        "icon": "Trees"
+      },
+      {
+        "name": "Tanah Lot Temple",
+        "icon": "Church"
+      },
+      {
+        "name": "Mount Batur",
+        "icon": "Mountain"
+      }
+    ]
   },
   {
     "id": "bangkok",
@@ -173,382 +253,25 @@
     "country": "Thailand",
     "description": "A vibrant city known for ornate shrines and bustling street life.",
     "longDescription": "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steeply Ekhmer-style spires.",
-    "image": "https://placehold.co/600x400.png",
+    "image": "https://res.cloudinary.com/dquhsepae/image/upload/v1748954267/Thailand_zsgydo.jpg",
     "dataAiHint": "bangkok temple city",
-    "attractions": [
-      { "name": "Grand Palace", "icon": "Landmark" },
-      { "name": "Wat Arun", "icon": "Church" },
-      { "name": "Chatuchak Weekend Market", "icon": "ShoppingCart" }
-    ],
     "bestTimeToVisit": "November to February",
     "type": ["City", "Cultural"],
     "averageRating": 4.5,
-    "pricePerNight": 100
-  },
-  {
-    "id": "dubai",
-    "name": "Dubai",
-    "country": "UAE",
-    "description": "A futuristic city of skyscrapers, luxury shopping, and desert adventures.",
-    "longDescription": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "dubai modern city",
+    "pricePerNight": 100,
     "attractions": [
-      { "name": "Burj Khalifa", "icon": "Building" },
-      { "name": "Dubai Mall", "icon": "ShoppingCart" },
-      { "name": "Desert Safari", "icon": "Sun" }
-    ],
-    "bestTimeToVisit": "November to March",
-    "type": ["City", "Modern", "Luxury"],
-    "averageRating": 4.6,
-    "pricePerNight": 300,
-    "tags": ["New", "Offer"]
-  },
-  {
-    "id": "rio-de-janeiro",
-    "name": "Rio de Janeiro",
-    "country": "Brazil",
-    "description": "Famous for its Christ the Redeemer statue, Copacabana beach, and Carnival festival.",
-    "longDescription": "Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shantytowns). Its raucous Carnival festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "rio beach city",
-    "attractions": [
-      { "name": "Christ the Redeemer", "icon": "Landmark" },
-      { "name": "Copacabana Beach", "icon": "Sun" },
-      { "name": "Sugarloaf Mountain", "icon": "Mountain" }
-    ],
-    "bestTimeToVisit": "December to March",
-    "type": ["City", "Coastal", "Cultural"],
-    "averageRating": 4.7,
-    "pricePerNight": 120
-  },
-  {
-    "id": "cape-town",
-    "name": "Cape Town",
-    "country": "South Africa",
-    "description": "A port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain.",
-    "longDescription": "Cape Town is a port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain. Slowly rotating cable cars climb to the mountain’s flat top, from which there are sweeping views of the city, the busy harbor and boats heading for Robben Island, the notorious prison that once held Nelson Mandela, which is now a living museum.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "cape town mountain coast",
-    "attractions": [
-      { "name": "Table Mountain", "icon": "Mountain" },
-      { "name": "Robben Island", "icon": "Landmark" },
-      { "name": "Boulders Beach Penguin Colony", "icon": "Users" }
-    ],
-    "bestTimeToVisit": "March to May and September to November",
-    "type": ["City", "Coastal", "Nature"],
-    "averageRating": 4.8,
-    "pricePerNight": 160
-  },
-  {
-    "id": "vancouver",
-    "name": "Vancouver",
-    "country": "Canada",
-    "description": "A bustling west coast seaport in British Columbia, among Canada’s densest, most ethnically diverse cities.",
-    "longDescription": "Vancouver, a bustling west coast seaport in British Columbia, is among Canada’s densest, most ethnically diverse cities. A popular filming location, it’s surrounded by mountains, and also has thriving art, theatre and music scenes. Vancouver Art Gallery is known for works by regional artists, while the Museum of Anthropology houses preeminent First Nations collections.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "vancouver city nature",
-    "attractions": [
-      { "name": "Stanley Park", "icon": "Trees" },
-      { "name": "Granville Island", "icon": "ShoppingCart" },
-      { "name": "Capilano Suspension Bridge", "icon": "Landmark" }
-    ],
-    "bestTimeToVisit": "April to October",
-    "type": ["City", "Nature", "Coastal"],
-    "averageRating": 4.6,
-    "pricePerNight": 200
-  },
-  {
-    "id": "prague",
-    "name": "Prague",
-    "country": "Czech Republic",
-    "description": "Nicknamed “the City of a Hundred Spires,” known for its Old Town Square.",
-    "longDescription": "Prague, capital city of the Czech Republic, is bisected by the Vltava River. Nicknamed “the City of a Hundred Spires,” it's known for its Old Town Square, the heart of its historic core, with colorful baroque buildings, Gothic churches and the medieval Astronomical Clock, which gives an animated hourly show. Completed in 1402, pedestrian Charles Bridge is lined with statues of Catholic saints.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "prague historic city",
-    "attractions": [
-      { "name": "Charles Bridge", "icon": "Landmark" },
-      { "name": "Prague Castle", "icon": "Building" },
-      { "name": "Old Town Square", "icon": "Landmark" }
-    ],
-    "bestTimeToVisit": "May and September",
-    "type": ["City", "Historic"],
-    "averageRating": 4.7,
-    "pricePerNight": 130
-  },
-  {
-    "id": "santorini",
-    "name": "Santorini",
-    "country": "Greece",
-    "description": "One of the Cyclades islands, known for its whitewashed, cubiform houses.",
-    "longDescription": "Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape. The whitewashed, cubiform houses of its 2 principal towns, Fira and Oia, cling to cliffs above an underwater caldera (crater). They overlook the sea, small islands to the west and beaches made up of black, red and white lava pebbles.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "santorini island coastal",
-    "attractions": [
-      { "name": "Oia's Sunset", "icon": "Sun" },
-      { "name": "Red Beach", "icon": "Landmark" },
-      { "name": "Akrotiri Archaeological Site", "icon": "ScrollText" }
-    ],
-    "bestTimeToVisit": "April to October",
-    "type": ["Island", "Coastal", "Romantic"],
-    "averageRating": 4.9,
-    "pricePerNight": 280,
-    "tags": ["Featured"]
-  },
-  {
-    "id": "kyoto",
-    "name": "Kyoto",
-    "country": "Japan",
-    "description": "Once the capital of Japan, famous for its classical Buddhist temples, gardens, and imperial palaces.",
-    "longDescription": "Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses. It’s also known for formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha, female entertainers often found in the Gion district.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "kyoto temple garden",
-    "attractions": [
-      { "name": "Fushimi Inari Shrine", "icon": "Church" },
-      { "name": "Kinkaku-ji (Golden Pavilion)", "icon": "Landmark" },
-      { "name": "Arashiyama Bamboo Grove", "icon": "Trees" }
-    ],
-    "bestTimeToVisit": "March to May and September to November",
-    "type": ["City", "Historic", "Cultural"],
-    "averageRating": 4.8,
-    "pricePerNight": 170
-  },
-  {
-    "id": "machu-picchu",
-    "name": "Machu Picchu",
-    "country": "Peru",
-    "description": "An Incan citadel set high in the Andes Mountains in Peru.",
-    "longDescription": "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "machu picchu mountain ruins",
-    "attractions": [
-      { "name": "Inca Trail", "icon": "MapPin" },
-      { "name": "Sun Gate (Inti Punku)", "icon": "Landmark" },
-      { "name": "Huayna Picchu", "icon": "Mountain" }
-    ],
-    "bestTimeToVisit": "May to September",
-    "type": ["Historic", "Nature", "Adventure", "Mountain"],
-    "averageRating": 4.9,
-    "pricePerNight": 90,
-    "tags": ["Popular"]
-  },
-  {
-    "id": "venice",
-    "name": "Venice",
-    "country": "Italy",
-    "description": "Built on more than 100 small islands in a lagoon in the Adriatic Sea.",
-    "longDescription": "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals – including the Grand Canal thoroughfare – lined with Renaissance and Gothic palaces. The central square, Piazza San Marco, contains St. Mark’s Basilica, which is tiled with Byzantine mosaics, and the Campanile bell tower offering views of the city’s red roofs.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "venice canals city",
-    "attractions": [
-      { "name": "St. Mark's Basilica", "icon": "Church" },
-      { "name": "Rialto Bridge", "icon": "Landmark" },
-      { "name": "Doge's Palace", "icon": "Building" }
-    ],
-    "bestTimeToVisit": "April to June and September to October",
-    "type": ["City", "Historic", "Romantic"],
-    "averageRating": 4.7,
-    "pricePerNight": 240
-  },
-  {
-    "id": "istanbul",
-    "name": "Istanbul",
-    "country": "Turkey",
-    "description": "A major city in Turkey that straddles Europe and Asia across the Bosphorus Strait.",
-    "longDescription": "Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait. Its Old City reflects the cultural influences of the many empires that once ruled here. In the Sultanahmet district, the open-air, Roman-era Hippodrome was for centuries the site of chariot races, and Egyptian obelisks also remain. The iconic Byzantine Hagia Sophia features a soaring 6th-century dome and rare Christian mosaics.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "istanbul historic architecture",
-    "attractions": [
-      { "name": "Hagia Sophia", "icon": "Church" },
-      { "name": "Blue Mosque", "icon": "Church" },
-      { "name": "Grand Bazaar", "icon": "ShoppingCart" }
-    ],
-    "bestTimeToVisit": "April to May and September to October",
-    "type": ["City", "Historic", "Cultural"],
-    "averageRating": 4.6,
-    "pricePerNight": 140
-  },
-  {
-    "id": "seoul",
-    "name": "Seoul",
-    "country": "South Korea",
-    "description": "A huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets.",
-    "longDescription": "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Notable attractions include futuristic Dongdaemun Design Plaza, a convention hall with curving architecture and a rooftop park; Gyeongbokgung Palace, which once had more than 7,000 rooms; and Jogyesa Temple, site of ancient locust and pine trees.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "seoul city modern",
-    "attractions": [
-      { "name": "Gyeongbokgung Palace", "icon": "Building" },
-      { "name": "Myeongdong Shopping Street", "icon": "ShoppingCart" },
-      { "name": "Bukchon Hanok Village", "icon": "Home" }
-    ],
-    "bestTimeToVisit": "March to May and September to November",
-    "type": ["City", "Modern", "Cultural"],
-    "averageRating": 4.5,
-    "pricePerNight": 160
-  },
-  {
-    "id": "cairo",
-    "name": "Cairo",
-    "country": "Egypt",
-    "description": "Set on the Nile River, Cairo is the site of Giza's colossal Pyramids and Great Sphinx.",
-    "longDescription": "Cairo, Egypt’s sprawling capital, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of antiquities including royal mummies and gilded King Tutankhamun artifacts. Nearby, Giza is the site of the iconic pyramids and Great Sphinx, dating to the 26th century BC. In Gezira Island’s leafy Zamalek district, the 187m Cairo Tower affords panoramic city views.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "cairo pyramids desert",
-    "attractions": [
-      { "name": "Pyramids of Giza", "icon": "Landmark" },
-      { "name": "Egyptian Museum", "icon": "ScrollText" },
-      { "name": "Khan el-Khalili Bazaar", "icon": "ShoppingCart" }
-    ],
-    "bestTimeToVisit": "October to April",
-    "type": ["City", "Historic", "Ancient"],
-    "averageRating": 4.4,
-    "pricePerNight": 80
-  },
-  {
-    "id": "lisbon",
-    "name": "Lisbon",
-    "country": "Portugal",
-    "description": "Portugal’s hilly, coastal capital city, with pastel-colored buildings in the old city.",
-    "longDescription": "Lisbon is Portugal’s hilly, coastal capital city. From imposing São Jorge Castle, the view encompasses the old city’s pastel-colored buildings, Tagus Estuary and Ponte 25 de Abril suspension bridge. Nearby, the National Azulejo Museum displays 5 centuries of decorative ceramic tiles. Just outside Lisbon is a string of Atlantic beaches, from Cascais to Estoril.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "lisbon coastal city",
-    "attractions": [
-      { "name": "Belém Tower", "icon": "Building" },
-      { "name": "Jerónimos Monastery", "icon": "Church" },
-      { "name": "Tram 28", "icon": "Train" }
-    ],
-    "bestTimeToVisit": "March to May and September to October",
-    "type": ["City", "Historic", "Coastal"],
-    "averageRating": 4.6,
-    "pricePerNight": 110
-  },
-  {
-    "id": "auckland",
-    "name": "Auckland",
-    "country": "New Zealand",
-    "description": "Based around 2 large harbours, Auckland is a major city in the north of New Zealand’s North Island.",
-    "longDescription": "Auckland, based around 2 large harbours, is a major city in the north of New Zealand’s North Island. In the centre, the iconic Sky Tower has views of Viaduct Harbour, full of superyachts and lined with bars and cafes. Auckland Domain, the city’s oldest park, is based around an extinct volcano and home to the formal Wintergardens. Near Downtown, Mission Bay Beach has a seaside promenade.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "auckland harbor skyline",
-    "attractions": [
-      { "name": "Sky Tower", "icon": "Building" },
-      { "name": "Waiheke Island", "icon": "Ship" },
-      { "name": "Auckland War Memorial Museum", "icon": "Landmark" }
-    ],
-    "bestTimeToVisit": "March to May and September to November",
-    "type": ["City", "Coastal", "Modern"],
-    "averageRating": 4.5,
-    "pricePerNight": 180
-  },
-  {
-    "id": "zermatt",
-    "name": "Zermatt",
-    "country": "Switzerland",
-    "description": "Famous for skiing, climbing and hiking, this mountain resort town lies beneath the iconic, pyramid-shaped Matterhorn peak.",
-    "longDescription": "Zermatt, in southern Switzerland’s Valais canton, is a mountain resort renowned for skiing, climbing and hiking. The town, at an elevation of around 1,600m, lies below the iconic, pyramid-shaped Matterhorn peak. Its main street, Bahnhofstrasse is lined with boutique shops, hotels and restaurants, and also has a lively après-ski scene. There are public outdoor rinks for ice-skating and curling.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "zermatt mountain ski resort",
-    "attractions": [
-      { "name": "Matterhorn", "icon": "Mountain" },
-      { "name": "Gornergrat Bahn", "icon": "Train" },
-      { "name": "Skiing & Snowboarding", "icon": "Snowflake" }
-    ],
-    "bestTimeToVisit": "December to April (skiing), June to September (hiking)",
-    "type": ["Mountain", "Adventure", "Nature", "Skiing"],
-    "averageRating": 4.9,
-    "pricePerNight": 350,
-    "tags": ["Luxury"]
-  },
-  {
-    "id": "bora-bora",
-    "name": "Bora Bora",
-    "country": "French Polynesia",
-    "description": "A small South Pacific island northwest of Tahiti, known for its scuba diving and luxury resorts with overwater bungalows.",
-    "longDescription": "Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. Surrounded by sand-fringed motus (islets) and a turquoise lagoon protected by a coral reef, it’s known for its scuba diving. It’s also a popular luxury resort destination where some guest bungalows are perched over the water on stilts. At the island's center rises Mt. Otemanu, a 727m dormant volcano.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "bora bora tropical island lagoon",
-    "attractions": [
-      { "name": "Mount Otemanu", "icon": "Mountain" },
-      { "name": "Matira Beach", "icon": "Sun" },
-      { "name": "Lagoon Tours", "icon": "Ship" }
-    ],
-    "bestTimeToVisit": "May to October",
-    "type": ["Island", "Coastal", "Luxury", "Romantic"],
-    "averageRating": 4.9,
-    "pricePerNight": 800,
-    "tags": ["Featured", "Luxury"]
-  },
-  {
-    "id": "hawaii",
-    "name": "Hawaii (Big Island)",
-    "country": "USA",
-    "description": "Known for its diverse landscapes, from active volcanoes to lush rainforests and beautiful beaches.",
-    "longDescription": "The island of Hawaii, often called the Big Island, is the largest island in the Hawaiian archipelago in the Central Pacific. Its diverse terrain spans tropical rainforests, lava deserts, snow-capped mountains and black-sand beaches. Within Volcanoes National Park are Kīlauea and Mauna Loa, 2 of the world's most active volcanoes. Hapuna Beach and Punaluʻu Black Sand Beach are popular spots for sunbathing and snorkeling.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "hawaii volcano beach",
-    "attractions": [
-      { "name": "Volcanoes National Park", "icon": "Flame" },
-      { "name": "Mauna Kea Summit", "icon": "Mountain" },
-      { "name": "Waipio Valley", "icon": "Trees" }
-    ],
-    "bestTimeToVisit": "April, May, September, October",
-    "type": ["Island", "Nature", "Adventure", "Coastal", "Volcanic"],
-    "averageRating": 4.7,
-    "pricePerNight": 250
-  },
-  {
-    "id": "reykjavik",
-    "name": "Reykjavik",
-    "country": "Iceland",
-    "description": "Iceland's coastal capital, known for the striking Hallgrímskirkja church and an entry point for viewing the Northern Lights.",
-    "longDescription": "Reykjavík, on the coast of Iceland, is the country's capital and largest city. It's home to the National and Saga museums, tracing Iceland’s Viking history. The striking concrete Hallgrímskirkja church and rotating Perlan glass dome offer sweeping views of the sea and nearby hills. Exemplifying the island’s volcanic activity is the geothermal Blue Lagoon spa, near the village of Grindavík.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "reykjavik city northern lights",
-    "attractions": [
-      { "name": "Hallgrímskirkja", "icon": "Church" },
-      { "name": "Blue Lagoon", "icon": "Droplet" },
-      { "name": "Golden Circle", "icon": "Circle" }
-    ],
-    "bestTimeToVisit": "June to August (summer), September to April (Northern Lights)",
-    "type": ["City", "Nature", "Adventure", "Geothermal"],
-    "averageRating": 4.6,
-    "pricePerNight": 200
-  },
-  {
-    "id": "marrakech",
-    "name": "Marrakech",
-    "country": "Morocco",
-    "description": "A former imperial city in western Morocco, a major economic center and home to mosques, palaces and gardens.",
-    "longDescription": "Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the Berber Empire, with mazelike alleys where thriving souks (marketplaces) sell traditional textiles, pottery and jewelry. A symbol of the city, and visible for miles, is the Moorish minaret of 12th-century Koutoubia Mosque.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "marrakech market historic city",
-    "attractions": [
-      { "name": "Jemaa el-Fnaa", "icon": "Users" },
-      { "name": "Koutoubia Mosque", "icon": "Church" },
-      { "name": "Bahia Palace", "icon": "Building" }
-    ],
-    "bestTimeToVisit": "March to May and September to November",
-    "type": ["City", "Historic", "Cultural", "Market"],
-    "averageRating": 4.5,
-    "pricePerNight": 90,
-    "tags": ["Offer"]
-  },
-  {
-    "id": "queenstown",
-    "name": "Queenstown",
-    "country": "New Zealand",
-    "description": "Known as the adventure capital of New Zealand, famous for bungee jumping, skiing, and stunning lake views.",
-    "longDescription": "Queenstown, New Zealand, sits on the shores of the South Island’s Lake Wakatipu, set against the dramatic Southern Alps. Renowned for adventure sports, it’s also a base for exploring the region’s vineyards and historic mining towns. There's bungee jumping off Kawarau Gorge Suspension Bridge and jet-boating on the Shotover and Dart rivers. In winter, there's skiing on the slopes of The Remarkables and Coronet Peak.",
-    "image": "https://placehold.co/600x400.png",
-    "dataAiHint": "queenstown lake mountain adventure",
-    "attractions": [
-      { "name": "Bungee Jumping", "icon": "Anchor" },
-      { "name": "Lake Wakatipu", "icon": "Ship" },
-      { "name": "Skyline Gondola", "icon": "CableCar" }
-    ],
-    "bestTimeToVisit": "December to February (summer), June to August (skiing)",
-    "type": ["Adventure", "Nature", "Mountain", "Lake"],
-    "averageRating": 4.8,
-    "pricePerNight": 220
+      {
+        "name": "Grand Palace",
+        "icon": "Landmark"
+      },
+      {
+        "name": "Wat Arun",
+        "icon": "Church"
+      },
+      {
+        "name": "Chatuchak Weekend Market",
+        "icon": "ShoppingCart"
+      }
+    ]
   }
 ]

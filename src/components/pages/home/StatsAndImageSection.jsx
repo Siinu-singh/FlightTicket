@@ -46,6 +46,7 @@ export function StatsAndImageSection() {
 				<div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
 					{/* Left Column */}
 					<div className="space-y-10">
+					<h1 className="text-2xl font-bold">Our Achievements</h1>
 						<div>
 							<p className="text-muted-foreground leading-relaxed text-base md:text-lg">
 								At FlightTicket, we offer more than just flight booking services;
