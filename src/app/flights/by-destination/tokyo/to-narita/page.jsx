@@ -11,18 +11,18 @@ export async function generateMetadata({ params }) {
 }
 
 export default function FlightRoutePage({ params }) {
-  const groupTitle = params.groupSlug.charAt(0).toUpperCase() + params.groupSlug.slice(1).replace(/-/g, ' ');
-  const linkTitle = params.linkSlug.replace(/-/g, ' ');
+  const pageDisplayTitle = "Flights to Narita (NRT)";
+  const pageGroupTitle = "Tokyo";
   
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
       <SectionTitle 
-        title={`Flights: ${linkTitle.charAt(0).toUpperCase() + linkTitle.slice(1)}`} 
-        subtitle={`Explore flight options related to ${groupTitle}.`} 
+        title={pageDisplayTitle} 
+        subtitle={`Explore flight options related to ${pageGroupTitle}.`} 
         className="text-left mb-10"
       />
       <div className="prose dark:prose-invert max-w-none mx-auto text-foreground leading-relaxed space-y-6">
-        <p>This is a placeholder page for flight search results for <strong>{linkTitle}</strong>, as part of the <strong>{groupTitle}</strong> flights category.</p>
+        <p>This is a placeholder page for flight search results for <strong>{pageDisplayTitle}</strong>, as part of the <strong>{pageGroupTitle} flights</strong> category.</p>
         <p>In a real application, this page would dynamically display a list of available flights based on this specific route or query. You would typically see features such as:</p>
         <ul className="list-disc pl-5 space-y-2">
           <li>Real-time flight listings from various airlines.</li>
